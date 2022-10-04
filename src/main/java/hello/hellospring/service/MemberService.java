@@ -38,7 +38,6 @@ public class MemberService {
 
         // 함수로 추출하여 사용. 'Refactor'에서 'Extract Method...'
         validateDuplicateMember(member); // 중복 회원 검증
-
         memberRepository.save(member);
         return member.getId();
     }
